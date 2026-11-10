@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">مستخرج أيقونات التطبيقات</string>
+    <string name="select_apk">اختر ملف APK</string>
+    <string name="select_multiple_apk">اختر عدة ملفات APK</string>
+    <string name="drop_apk_here">انقر أو اختر ملف APK لاستخراج الأيقونة بدقة عالية</string>
+    <string name="history">السجل</string>
+    <string name="settings">الإعدادات</string>
+    <string name="app_info">معلومات التطبيق</string>
+    <string name="package_name">اسم الحزمة</string>
+    <string name="version">الإصدار</string>
+    <string name="sdk_version">إصدار SDK (الأنظار / المستهدف)</string>
+    <string name="file_size">حجم الملف</string>
+    <string name="export_options">خيارات التصدير</string>
+    <string name="format">التنسيق</string>
+    <string name="size">الحجم</string>
+    <string name="mask_shape">شكل القناع</string>
+    <string name="include_background">تضمين الخلفية</string>
+    <string name="save_to_gallery">حفظ في المعرض</string>
+    <string name="share_image">مشاركة</string>
+    <string name="copy_clipboard">نسخ إلى الحافظة</string>
+    <string name="layer_full">الكل</string>
+    <string name="layer_fg">المقدمة</string>
+    <string name="layer_bg">الخلفية</string>
+    <string name="success_saved">تم الحفظ بنجاح في المعرض!</string>
+    <string name="success_copied">تم النسخ إلى الحافظة!</string>
+    <string name="error_extraction">فشل استخراج أيقونة ملف APK.</string>
+</resources>

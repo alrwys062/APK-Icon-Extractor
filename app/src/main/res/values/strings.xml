@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">APK Icon Extractor</string>
+    <string name="select_apk">Select APK File</string>
+    <string name="select_multiple_apk">Select Multiple APKs</string>
+    <string name="drop_apk_here">Tap or select APK to extract high-res icons</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="app_info">App Information</string>
+    <string name="package_name">Package Name</string>
+    <string name="version">Version</string>
+    <string name="sdk_version">SDK (Min / Target)</string>
+    <string name="file_size">File Size</string>
+    <string name="export_options">Export Options</string>
+    <string name="format">Format</string>
+    <string name="size">Size</string>
+    <string name="mask_shape">Mask Shape</string>
+    <string name="include_background">Include Background</string>
+    <string name="save_to_gallery">Save to Gallery</string>
+    <string name="share_image">Share</string>
+    <string name="copy_clipboard">Copy to Clipboard</string>
+    <string name="layer_full">Full</string>
+    <string name="layer_fg">Foreground</string>
+    <string name="layer_bg">Background</string>
+    <string name="success_saved">Saved successfully to Gallery!</string>
+    <string name="success_copied">Copied to clipboard!</string>
+    <string name="error_extraction">Failed to extract APK icon.</string>
+</resources>

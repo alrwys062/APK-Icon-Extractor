@@ -1,0 +1,6 @@
+{
+  "name": "APK Icon Extractor",
+  "description": "Extract high-resolution app icons from any APK file with advanced export and format options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
