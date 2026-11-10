@@ -13,6 +13,7 @@ import androidx.compose.material.icons.filled.AutoFixHigh
 import androidx.compose.material.icons.filled.ContentCopy
 import androidx.compose.material.icons.filled.Download
 import androidx.compose.material.icons.filled.Share
+import androidx.compose.material.icons.filled.Campaign
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -47,6 +48,7 @@ fun ResultScreen(
     onShare: () -> Unit,
     onCopy: () -> Unit,
     onOpenAiEnhance: () -> Unit,
+    onOpenMarketing: () -> Unit,
     onBack: () -> Unit
 ) {
     val scrollState = rememberScrollState()
@@ -71,6 +73,9 @@ fun ResultScreen(
                     }
                 },
                 actions = {
+                    IconButton(onClick = onOpenMarketing) {
+                        Icon(Icons.Default.Campaign, contentDescription = "Marketing", tint = Color(0xFF22C55E))
+                    }
                     IconButton(onClick = onOpenAiEnhance) {
                         Icon(Icons.Default.AutoFixHigh, contentDescription = "AI Enhance", tint = Color(0xFF22C55E))
                     }
@@ -144,6 +149,22 @@ fun ResultScreen(
                     contentDescription = "Extracted Icon Preview",
                     modifier = Modifier.size(160.dp)
                 )
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Marketing Quick Launch Button
+            Button(
+                onClick = onOpenMarketing,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(52.dp),
+                shape = RoundedCornerShape(26.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF143823))
+            ) {
+                Icon(Icons.Default.Campaign, contentDescription = null, tint = Color(0xFF22C55E))
+                Spacer(modifier = Modifier.width(8.dp))
+                Text("فتح أداة النشر والتسويق لواتساب وتليجرام", color = Color.White, fontWeight = FontWeight.Bold)
             }
 
             Spacer(modifier = Modifier.height(16.dp))

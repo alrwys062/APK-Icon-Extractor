@@ -16,12 +16,13 @@ import com.example.ui.screen.AiEnhanceScreen
 import com.example.ui.screen.HistoryScreen
 import com.example.ui.screen.HomeScreen
 import com.example.ui.screen.InstalledAppsScreen
+import com.example.ui.screen.MarketingScreen
 import com.example.ui.screen.ResultScreen
 import com.example.ui.theme.MyApplicationTheme
 import com.example.ui.viewmodel.MainViewModel
 
 enum class AppScreen {
-    HOME, RESULT, HISTORY, INSTALLED_APPS, AI_ENHANCE
+    HOME, RESULT, HISTORY, INSTALLED_APPS, AI_ENHANCE, MARKETING
 }
 
 class MainActivity : ComponentActivity() {
@@ -146,6 +147,7 @@ class MainActivity : ComponentActivity() {
                                         onShare = { viewModel.shareIcon(context) },
                                         onCopy = { viewModel.copyToClipboard(context) },
                                         onOpenAiEnhance = { currentScreen = AppScreen.AI_ENHANCE },
+                                        onOpenMarketing = { currentScreen = AppScreen.MARKETING },
                                         onBack = {
                                             currentScreen = AppScreen.HOME
                                             viewModel.clearSelectedApk()
@@ -170,12 +172,23 @@ class MainActivity : ComponentActivity() {
                                     LaunchedEffect(Unit) { currentScreen = AppScreen.HOME }
                                 }
                             }
+                            AppScreen.MARKETING -> {
+                                BackHandler { currentScreen = AppScreen.RESULT }
+                                selectedApkInfo?.let { apkInfo ->
+                                    MarketingScreen(
+                                        apkInfo = apkInfo,
+                                        onBack = { currentScreen = AppScreen.RESULT }
+                                    )
+                                } ?: run {
+                                    LaunchedEffect(Unit) { currentScreen = AppScreen.HOME }
+                                }
+                            }
                             AppScreen.HISTORY -> {
                                 BackHandler { currentScreen = AppScreen.HOME }
                                 HistoryScreen(
                                     history = history,
                                     onHistoryItemClick = { item ->
-                                        currentScreen = AppScreen.HOME
+                                        currentScreen = AppScreen.RESULT
                                     },
                                     onDeleteItem = { id ->
                                         viewModel.deleteHistoryItem(id)

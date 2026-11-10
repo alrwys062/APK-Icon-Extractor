@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">APK Icon Extractor</string>
+    <string name="app_name">APK Icon Extractor Ultimate AI</string>
     <string name="select_apk">Select APK File</string>
     <string name="select_multiple_apk">Select Multiple APKs</string>
     <string name="drop_apk_here">Tap or select APK to extract high-res icons</string>
@@ -24,4 +24,11 @@
     <string name="success_saved">Saved successfully to Gallery!</string>
     <string name="success_copied">Copied to clipboard!</string>
     <string name="error_extraction">Failed to extract APK icon.</string>
+    <string name="ai_enhance_4k">AI 4K Enhance</string>
+    <string name="marketing_generator">Marketing Publisher (WhatsApp &amp; Telegram)</string>
+    <string name="app_description">App Marketing Description</string>
+    <string name="app_features">Key Features</string>
+    <string name="phone_mockups">Phone Mockup Screenshots</string>
+    <string name="share_whatsapp">Share via WhatsApp</string>
+    <string name="share_telegram">Share via Telegram</string>
 </resources>
